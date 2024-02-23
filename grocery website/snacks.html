@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Categories - Mini Mart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/30c62605d4.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/30c62605d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo1.png" width="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Login.html">Account</a></li>
+                </ul>
+            </nav>
+           
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+       
+
+    </div>
+<div class="small-container">
+    <div class="row row-2">
+        <h2>All Categories: Beverages & Snacks</h2>
+        <div class="dropdown">
+            <button class="dropbtn-2">Beverages & Snacks</button>
+            <div class="dropdown-content">
+              <a href="category.html">Grocery & Staples</a>
+              <a href="beauty.html">Beauty Products</a>
+              <a href="package.html">Packaged Foods</a>
+              <a href="clean.html">Home CareProducts</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-27.jpg">
+            <h4>Thumbs Up 2.25L</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 90</p>
+            <button onclick="addToCart('Thumbs Up 2.25L', 90, 'images/Product-27.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-28.jpg">
+            <h4>Sprite 2.25L</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 95</p>
+            <button onclick="addToCart('Sprite 2.25L', 95, 'images/Product-28.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-29.jpg">
+            <h4>Coco-Cola 300ml</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 26</p>
+            <button onclick="addToCart('Coco-Cola 300ml', 26, 'images/Product-29.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-30.jpg">
+            <h4>Slice Mango juice 1.75L</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 60</p>
+            <button onclick="addToCart('Slice Mango juice 1.75L', 60, 'images/Product-30.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-31.jpg">
+            <h4>Coco-Cola 2.25L</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 90</p>
+            <button onclick="addToCart('Coco-Cola 2.25L', 90, 'images/Product-31.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-32.jpg">
+            <h4>Pepsi Black 250ml</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 25</p>
+            <button onclick="addToCart('Pepsi Black 250ml', 25, 'images/Product-32.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-33.jpg">
+            <br>
+            <h4>7Up 2.25L</h4>
+            
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 95</p>
+            <button onclick="addToCart('7Up 2.25L', 95, 'images/Product-33.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-34.jpg">
+            <h4>Mountain Dew 750ml</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 32</p>
+            <button onclick="addToCart('Mountain Dew 750ml', 32, 'images/Product-34.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-35.jpg">
+            <h4>Tata Agni Strong Leaf Tea 1Kg</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 195</p>
+            <button onclick="addToCart('Tata Agni Strong Leaf Tea 1Kg', 195, 'images/Product-35.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-36.jpg">
+            <h4>Tata Gold Leaf Tea 500g</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 235</p>
+            <button onclick="addToCart('Tata Gold Leaf Tea 500g', 235, 'images/Product-36.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-37.jpg">
+            <h4>Nescafe Classic Instant Coffee 45g</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 140</p>
+            <button onclick="addToCart('Nescafe Classic Instant Coffee 45g', 140, 'images/Product-37.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-38.jpg">
+            <h4>BRU Instant Coffee 50g</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 110</p>
+            <button onclick="addToCart('BRU Instant Coffee 50g', 110, 'images/Product-38.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+   
+
+<!----------------footer---------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="images/logo1.png">
+                <p>Enjoy a convenient shopping experience. Order grocery from anywhere at your ease.</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Shop</li>
+                    <li>Blog</li>
+                </ul>
+                
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><i class="fab fa-facebook-square"></i>                FaceBook</li>
+                    <li><i class="fab fa-whatsapp-square"></i>                Whatsapp</li>
+                    <li><i class="fab fa-instagram-square"></i>               Instagram</li>
+                </ul>
+                
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">@Copyright 2023 - Mini Mart</p>
+    </div>
+</div>
+
+<!----js for toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function addToCart(productName, productPrice, productImage, button) {
+            // Initialize the cart
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the product is already in the cart
+            let existingProduct = cart.find((product) => product.name === productName);
+
+            if (existingProduct) {
+                // If the product is already in the cart, update the quantity
+                existingProduct.quantity += 1;
+            } else {
+                // If the product is not in the cart, add it with quantity 1
+                cart.push({
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save the updated cart to local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+    
+            // Store the original text
+            var originalText = button.innerText;
+
+            // Change the text on click
+            button.innerText = "Added to Cart";
+
+            // Set a timeout to change the text back after 10 seconds
+            setTimeout(function() {
+                button.innerText = originalText;
+            }, 5000);
+
+            // Display a notification with the product details
+            showNotification(productName, productPrice, productImage);
+        }
+
+        function showNotification(productName, productPrice, productImage) {
+            alert(`Product added to cart:\nName: ${productName}\nPrice: ${productPrice}\n`);
+        }
+    </script>
+
+
+
+</body>
+</html>

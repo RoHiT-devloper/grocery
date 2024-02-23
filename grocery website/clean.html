@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Categories - Mini Mart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/30c62605d4.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/30c62605d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo1.png" width="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Login.html">Account</a></li>
+                </ul>
+            </nav>
+           
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+       
+
+    </div>
+<div class="small-container">
+    <div class="row row-2">
+        <h2>All Categories: Home Care Products</h2>
+        <div class="dropdown">
+            <button class="dropbtn-4">Home Care Products</button>
+            <div class="dropdown-content">
+              <a href="category.html">Grocery & Staples</a>
+              <a href="snacks.html">Beverages & Snacks</a>
+              <a href="beauty.html">Beauty Products</a>
+              <a href="package.html">Packaged Foods</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-51.jpg">
+            <h4>Surf Excel Detergant Bar</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 10</p>
+            <!-- Added a button to add the product to the cart -->
+            <button onclick="addToCart('Surf Excel Detergant Bar', 10, 'images/Product-51.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-52.jpg">
+            <h4>Vim Dishwash Bar 500g</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 50</p>
+            <button onclick="addToCart('Vim Dishwash Bar 500g', 50, 'images/Product-52.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-53.jpg">
+            <h4>Surf Excel Easy Wash Detergant Powder 1Kg</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 200</p>
+            <button onclick="addToCart('Surf Excel Easy Wash Detergant Powder 1Kg', 200, 'images/Product-53.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-54.jpg">
+            <h4>Tide Naturals Lemon Detergant Powder</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 75</p>
+            <button onclick="addToCart('Tide Naturals Lemon & Chandan Detergant Powde', 75, 'images/Product-54.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-55.jpg">
+            <h4>Ghadi Detergant Powder 1Kg</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 60</p>
+            <button onclick="addToCart('Ghadi Detergant Powder 1Kg', 60, 'images/Product-55.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-56.jpg">
+            <h4>Comfort Fabric Conditioner 210ml</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 55</p>
+            <button onclick="addToCart('Comfort Fabric Conditioner 210ml', 55, 'images/Product-56.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-57.jpg">
+            <br>
+            <h4>Exo Anti-Bacterial Dishwash Bar 500g</h4>
+            
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 55</p>
+            <button onclick="addToCart('Exo Dishwash Bar 500g', 55, 'images/Product-57.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-59.jpg">
+            <h4>Surf Excel Liquid Detergant 1L</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 165</p>
+            <button onclick="addToCart('Surf Excel Liquid Detergant 1L', 165, 'images/Product-59.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-58.jpg">
+            <h4>Airel Liquid Detergant 1L</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 195</p>
+            <button onclick="addToCart('Airel Liquid Detergant 1L', 195, 'images/Product-58.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-60.jpg">
+            <h4>Good Knight Mosquito Repllent Refill</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 125</p>
+            <button onclick="addToCart('Good Knight Mosquito Repllent Refill', 125, 'images/Product-60.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-61.jpg">
+            <h4>Pril Dishwash Liquid 750ml</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 155</p>
+            <button onclick="addToCart('Pril Dishwash Liquid 750ml', 155, 'images/Product-61.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-62.jpg">
+            <h4>Odonil Zipper Air Freshner 10g</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 45</p>
+            <button onclick="addToCart('Odonil Zipper Air Freshner 10g', 45, 'images/Product-62.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+   
+
+<!----------------footer---------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="images/logo1.png">
+                <p>Enjoy a convenient shopping experience. Order grocery from anywhere at your ease.</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="category.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-square"></i>                FaceBook</a></li>
+                    <li><a href=""><i class="fab fa-whatsapp-square"></i>                Whatsapp</a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i>               Instagram</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">@Copyright 2023 - Mini Mart</p>
+    </div>
+</div>
+
+<!----js for toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        function addToCart(productName, productPrice, productImage, button) {
+            // Initialize the cart
+    
+            // Store the original text
+            var originalText = button.innerText;
+
+            // Change the text on click
+            button.innerText = "Added to Cart";
+
+            // Set a timeout to change the text back after 10 seconds
+            setTimeout(function() {
+                button.innerText = originalText;
+            }, 5000);
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the product is already in the cart
+            let existingProduct = cart.find((product) => product.name === productName);
+
+            if (existingProduct) {
+                // If the product is already in the cart, update the quantity
+                existingProduct.quantity += 1;
+            } else {
+                // If the product is not in the cart, add it with quantity 1
+                cart.push({
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save the updated cart to local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+           
+
+            // Display a notification with the product details
+            showNotification(productName, productPrice, productImage);
+        }
+        function showNotification(productName, productPrice, productImage) {
+            alert(`Product added to cart:\nName: ${productName}\nPrice: ${productPrice}\n`);
+        }
+
+    </script>
+
+
+
+</body>
+</html>

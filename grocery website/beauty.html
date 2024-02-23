@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Categories - Mini Mart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/30c62605d4.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/30c62605d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo1.png" width="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Login.html">Account</a></li>
+                </ul>
+            </nav>
+           
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+       
+
+    </div>
+<div class="small-container">
+    <div class="row row-2">
+        <h2>All Categories: Beauty Products</h2>
+        <div class="dropdown">
+            <button class="dropbtn-3">Beauty Products</button>
+            <div class="dropdown-content">
+              <a href="category.html">Grocery & Staples</a>
+              <a href="snacks.html">Beverages & Snacks</a>
+              <a href="package.html">Packaged Foods</a>
+              <a href="clean.html">Home Care Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-39.jpg">
+            <h4>Nivea Soft Moisturiser Cream 300ml</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 275</p>
+            <!-- Added a button to add the product to the cart -->
+            <button onclick="addToCart('Nivea Soft Moisturiser Cream 300ml', 275, 'images/Product-39.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-40.jpg">
+            <h4>Nivea Body Lotion 400ml</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 230</p>
+            <button onclick="addToCart('Nivea Body Lotion 400ml', 230, 'images/Product-40.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-41.jpg">
+            <h4>Pond's Bright Beauty Facewash 200g</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 215</p>
+            <button onclick="addToCart('Ponds Bright Beauty Facewash 200g', 215, 'images/Product-41.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-42.jpg">
+            <h4>Pond's Light Moisturiser 200ml</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 195</p>
+            <button onclick="addToCart('Ponds Light Moisturiser 200ml', 195, 'images/Product-42.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-43.jpg">
+            <h4>Lakme Peach Milk Soft Cream 200g</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 235</p>
+            <button onclick="addToCart('Lakme Peach Milk Soft Cream 200g', 235, 'images/Product-43.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-44.jpg">
+            <h4>Pond's Bright Beauty Serum Cream 35g</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 110</p>
+            <button onclick="addToCart('Ponds Bright Beauty Serum Cream 35g', 110, 'images/Product-44.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-45.jpg">
+            <br>
+            <h4>Glow & Lovely Multi-Vitamin Cream 25g</h4>
+            
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 55</p>
+            <button onclick="addToCart('Glow & Lovely Multi-Vitamin Cream 25g', 55, 'images/Product-45.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-46.jpg">
+            <h4>Nivea Turmeric Facewash 100ml</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 115</p>
+            <button onclick="addToCart('Nivea Turmeric Facewash 100ml', 115, 'images/Product-46.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-47.jpg">
+            <h4>Lakme 9 to 5 CC Cream</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 195</p>
+            <button onclick="addToCart('Lakme 9 to 5 CC Cream', 195, 'images/Product-47.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-48.jpg">
+            <h4>Everyuth Tulsi Turmeric Facewash</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 235</p>
+            <button onclick="addToCart('Everyuth Tulsi Turmeric Facewash', 235, 'images/Product-48.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-49.jpg">
+            <h4>Himalayan Purifying Neem Facewash</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 140</p>
+            <button onclick="addToCart('Himalayan Purifying Neem Facewash', 140, 'images/Product-49.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-50.jpg">
+            <h4>MamaEarth Ubtan Facewash</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 110</p>
+            <button onclick="addToCart('MamaEarth Ubtan Facewash', 110, 'images/Product-50.jpg', this)" class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+   
+
+<!----------------footer---------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="images/logo1.png">
+                <p>Enjoy a convenient shopping experience. Order grocery from anywhere at your ease.</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="category.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i>                FaceBook</a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp-square"></i>                Whatsapp</a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i>               Instagram</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">@Copyright 2023 - Mini Mart</p>
+    </div>
+</div>
+
+<!----js for toggle menu------>
+<script>
+
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        function addToCart(productName, productPrice, productImage, button) {
+            // Initialize the cart
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the product is already in the cart
+            let existingProduct = cart.find((product) => product.name === productName);
+
+            if (existingProduct) {
+                // If the product is already in the cart, update the quantity
+                existingProduct.quantity += 1;
+            } else {
+                // If the product is not in the cart, add it with quantity 1
+                cart.push({
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save the updated cart to local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
+    
+            // Store the original text
+            var originalText = button.innerText;
+
+            // Change the text on click
+            button.innerText = "Added to Cart";
+
+            // Set a timeout to change the text back after 10 seconds
+            setTimeout(function() {
+                button.innerText = originalText;
+            }, 5000);
+            // Display a notification with the product details
+            showNotification(productName, productPrice, productImage);
+        }
+
+        function showNotification(productName, productPrice, productImage) {
+            alert(`Product added to cart:\nName: ${productName}\nPrice: ${productPrice}\n`);
+        }
+    </script>
+</body>
+</html>

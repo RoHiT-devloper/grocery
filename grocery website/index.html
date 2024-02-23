@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Mart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/30c62605d4.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/30c62605d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo1.png" width="150px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Login.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" class="cart-icon"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Online Grocery Store</h1>
+                <p>We bring the store to your door. Start ordering groceries from today.</p>
+                <a href="Login.html" class="btn">Shop Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/store.png">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-------- Featured Categories------------>
+<div class="categories">
+    
+    
+    <div class="small-container">
+        <h3 style="text-align: center; margin-bottom: 40px;">Featured Categories</h3>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/Category-1.png">
+            </div>
+            <div class="col-4">
+                <img src="images/Category-2.png">
+            </div>
+            <div class="col-4">
+                <img src="images/Category-3.jpg">
+            </div>
+            <div class="col-4">
+                <img src="images/Category-4.png">
+    
+            </div>
+            <div class="col-4">
+                <img src="images/Category-5.png">
+    
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-------- Featured Products------------>
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-1.jpg">
+            <h4>Fortune Atta 5kg Packet</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 245</p>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-2.png">
+            <h4>Coco Cola 2 Litre </h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 100</p>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-3.jpg">
+            <h4>Vaseline Body Lotion</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 190</p>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-4.png">
+            <h4>Nescafe classic Jar</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 95</p>
+        </div>
+        <!--<div class="col-5">
+            <img src="images/Product-5.png">
+            <h4>Dettol Dish Cleaning</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 150</p>
+        </div>-->
+    </div>
+
+
+
+<!-------- Latest Products------------>
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-10.jpg">
+            <h4>Veg Atta Noodles</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 45</p>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-6.png">
+            <h4>Paper Boat</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 25</p>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-7.png">
+            <h4>Unibic Choco Cookies</h4>
+            
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 100</p>
+        </div>
+        <!--<div class="col-5">
+            <img src="images/Product-8.jpg">
+            <h4>Colin Glass Cleaner </h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 95</p>
+        </div>-->
+        <div class="col-5">
+            <img src="images/Product-9.png">
+            <h4>Lux Body Wash</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 150</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <img src="images/Product-11.jpg">
+            <h4>Bournville Chocolate</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 110</p>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-12.png">
+            <h4>Rollicks Nutty Roll</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 45</p>
+        </div>
+        <div class="col-5">
+            <img src="images/Product-13.png">
+            <h4>Dove Shampoo</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 160</p>
+        </div>
+        <!--<div class="col-5">
+            <img src="images/Product-14.jpg">
+            <h4>Bajaj Almond Drops</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Rs. 105</p>
+        </div>-->
+        <div class="col-5">
+            <img src="images/Product-15.png">
+            <h4>Lifebuoy Hand Sanitizer</h4>
+            <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Rs. 50</p>
+        </div>
+    </div>
+
+</div>
+<!--------offer-------->
+
+
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/offer.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusive Offer on Dark Fantasy Choco fills</p>
+                <h1>Dark Fantasy Choco fills Combo Pack</h1>
+                <small>Sunfeast Dark Fantasy Choco Fills plus Coffee fills Combo. Buy 3 Dark Fantasy Choco Fills, get 1 Dark Fantasy Coffee Fill free.</small><br>
+                <div class="price-container">
+                    Price: <span class="original-price">Rs. 150</span>  
+                </div><p>Rs. 90</p>
+                <button onclick="addToCart('Sunfeast Dark Fantasy Combo Pack', 90, 'images/offer.png', this)" class="btn-1">Buy Now &#8594;</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--------brands------->
+
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-6">
+                <img src="images/Coca-Cola-Logo.png" width="120px">
+            </div>
+            <div class="col-6">
+                <img src="images/cadbury logo.jpg" width="120px">
+            </div>
+            <div class="col-6">
+                <img src="images/dove logo.jpg" width="120px">
+            </div>
+            <div class="col-6">
+                <img src="images/Sunfeast-logo.png" width="120px">
+            </div>
+            <div class="col-6">
+                <img src="images/britannia logo.jpg" width="120px">
+            </div>
+            <div class="col-6">
+                <img src="images/maggi-logo.png" width="120px">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!----------------footer---------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="images/logo1.png">
+                <p>Enjoy a convenient shopping experience. Order grocery from anywhere at your ease.</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-square"></i>                FaceBook</a></li>
+                    <li><a href=""><i class="fab fa-whatsapp-square"></i>                Whatsapp</a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i>               Instagram</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">@Copyright 2023 - Mini Mart</p>
+    </div>
+</div>
+
+<!----js for toggle menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function addToCart(productName, productPrice, productImage, button) {
+            // Initialize the cart
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the product is already in the cart
+            let existingProduct = cart.find((product) => product.name === productName);
+
+            if (existingProduct) {
+                // If the product is already in the cart, update the quantity
+                existingProduct.quantity += 1;
+            } else {
+                // If the product is not in the cart, add it with quantity 1
+                cart.push({
+                    name: productName,
+                    price: productPrice,
+                    image: productImage,
+                    quantity: 1
+                });
+            }
+
+            // Save the updated cart to local storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+    
+            // Store the original text
+            var originalText = button.innerText;
+
+            // Change the text on click
+            button.innerText = "Added to Cart";
+
+            // Set a timeout to change the text back after 10 seconds
+            setTimeout(function() {
+                button.innerText = originalText;
+            }, 9000);
+
+            // Display a notification with the product details
+            showNotification(productName, productPrice, productImage);
+        }
+
+        function showNotification(productName, productPrice, productImage) {
+            alert(`Product added to cart:\nName: ${productName}\nPrice: ${productPrice}\n`);
+        }
+
+    </script>
+
+
+
+</body>
+</html>
